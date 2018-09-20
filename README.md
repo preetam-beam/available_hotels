@@ -18,6 +18,21 @@ pip install -r requirements.txt
 python app.py
 ```
 
+## Calling the API
+```
+POST /get_hotels/ HTTP/1.1
+Host: 127.0.0.1:5000
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+	"fromDate": "2018-09-10",
+	"toDate": "2018-09-15",
+	"city": "DXB",
+	"numberOfAdults": 2
+}
+```
+
 ## Environment Variables:
 >*Two Envionment variables are required in Order to run the code*
 ```
