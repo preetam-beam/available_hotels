@@ -18,6 +18,13 @@ pip install -r requirements.txt
 python app.py
 ```
 
+## Environment Variables:
+>*Two Envionment variables are required in Order to run the code*
+```
+CRAZY_HOTELS_URL - URL to the API of provider Crazy Hotels
+BEST_HOTELS_URL - URL to the API of provider Best Hotels
+```
+
 ## Calling the API
 ```
 POST /get_hotels/ HTTP/1.1
@@ -33,11 +40,20 @@ Cache-Control: no-cache
 }
 ```
 
-## Environment Variables:
->*Two Envionment variables are required in Order to run the code*
+## Adding a new Provider
 ```
-CRAZY_HOTELS_URL - URL to the API of provider Crazy Hotels
-BEST_HOTELS_URL - URL to the API of provider Best Hotels
+A new provider implementation can be done by following below steps:
+1. Create a new python file in *providers* directory by keeping the file name in lower case.
+2. Import the interface with command - *from providers.provider_interface import ProviderInterface*
+3. Override method *get_hotels* and do the API implementation in it.
+4. Output will be a list of hotels with every hotel being a dictionary with below keys:
+	{
+		"provider": "Crazy Hotels",
+		"hotelName": "hotel_name",
+		"fare": 1000,
+		"amenities": ["gym", "pool"],
+		"rate": 5
+	}
 ```
 
 ## Test Cases:
