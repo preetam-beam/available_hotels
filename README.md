@@ -11,7 +11,7 @@ This code contains mainly below files:
 4. **proviers directory** - Holds implementation of the provider APIs.
 
 ## Running the code
-Please type in the below command after navigating in terminal to directory named **AvailableHotels**
+Please type in the below command after navigating in terminal to directory named **available_hotels**
 
 ``` 
 pip install -r requirements.txt
