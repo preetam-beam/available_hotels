@@ -1,7 +1,7 @@
 # Available Hotels API
 
 ```
-Takes in fromDate, toDate, city and numberOfAdults as Input and returns the list of hotels fetched by different providers
+Takes in fromDate, toDate, city and numberOfAdults as Input and returns the list of hotels fetched from different providers
 ```
 
 This code contains mainly below files:
