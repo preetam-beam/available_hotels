@@ -8,7 +8,7 @@ This code contains mainly below files:
 1. **app.py** - This contains the front end APIs. Runs a flask app
 2. **hotels_utils.py** - Holds the core logic to instantiate objects of different providers' classes and call their api
 3. **request_wrapper.py** - Takes care of the HTTP request.
-4. **proviers directory** - Holds implementation of the provider APIs.
+4. **providers directory** - Holds implementation of the provider APIs.
 
 ## Running the code
 Please type in the below command after navigating in terminal to directory named **available_hotels**
